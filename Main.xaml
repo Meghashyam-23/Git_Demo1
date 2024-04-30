@@ -80,7 +80,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1051.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="Array_input" />
+      <Variable x:TypeArguments="x:Int32" Name="Array_input" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -90,7 +90,7 @@
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,126.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hello World&quot;]" />
     <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter a number as input" Title="Number input">
       <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">[Array_input]</OutArgument>
+        <OutArgument x:TypeArguments="x:Int32">[Array_input]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
     <If Condition="[Array_input &gt; 10]" sap:VirtualizedContainerService.HintSize="450,550.6666666666666" sap2010:WorkflowViewState.IdRef="If_1">
